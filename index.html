@@ -6,6 +6,32 @@
     <title>Intrinsify</title>
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Barlow', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#FEF9ED',  // Lightest
+                100: '#FCF3DB',
+                200: '#F9E4B7',
+                300: '#F6D594',
+                400: '#F4C771',
+                500: '#F2BA4F', // Your base color
+                600: '#C29540',
+                700: '#917030',
+                800: '#614C20',
+                900: '#302610',  // Darkest
+              }
+            }
+          },
+        },
+      }
+    </script>
 </head>
 <body>
     <div class="min-h-screen">
@@ -24,7 +50,7 @@
 
         <main class="max-w-7xl mx-auto px-8">
             <section class="text-center py-16">
-                <h2 class="text-4xl font-bold mb-4">Welcome to Your Site</h2>
+                <h2 class="text-4xl font-bold color-red mb-4">Welcome to Your Site</h2>
                 <p class="text-xl text-gray-600">A clean, minimal landing page built with Nuxt.</p>
             </section>
         </main>
